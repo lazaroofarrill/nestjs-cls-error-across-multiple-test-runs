@@ -9,7 +9,7 @@ export function scaffoldUnitTests() {
 
   beforeAll(async () => {
     module = await Test.createTestingModule({
-      imports: [ClsModule.register({ global: true })],
+      imports: [ClsModule.forRoot({global: true})],
       providers: [AppService],
       controllers: [AppController],
     }).compile();
