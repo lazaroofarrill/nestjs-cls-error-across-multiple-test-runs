@@ -17,4 +17,12 @@ describe('test suite 1', () => {
 
     expect(toSave).toBe(read);
   });
+
+  it('should save it again', function() {
+    const toSave = 'a different string to save';
+    appService.saveToLocalStorage(toSave);
+    const read = appService.readFromLocalStorage();
+
+    expect(toSave).toBe(read);
+  });
 });
