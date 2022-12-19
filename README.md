@@ -11,3 +11,5 @@ $ yarn test
 ```shell
 $ yarn test:apart
 ```
+
+branch cls-latest has most recent version of nestjs-cls and the problem persists. 
